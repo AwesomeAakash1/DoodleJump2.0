@@ -341,7 +341,7 @@ function drawBackground() {
  * Draw score on the top right
  */
 function drawScore() {
-  const fontSize = 24;
+  const fontSize = 20;
   const scoreStr = `SCORE: ${score.toLocaleString()}`;
   const strWidth = textWidth(scoreStr);
   let margin = 10;
@@ -353,7 +353,7 @@ function drawScore() {
   text(scoreStr, width - strWidth - margin, margin + fontSize);
   // draw copy right
   textStyle(ITALIC);
-  text("By Aakash and Jay, for Web Design", margin, height - margin);
+  text("Web Design Club", margin, height - margin);
   // draw FPS
   text("FPS: " + Math.floor(frameRate()) || 0, margin, height - 30);
 }
